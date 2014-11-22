@@ -1,0 +1,21 @@
+app.controller "tagCtrl", ($scope, $http) ->
+
+  $scope.getAuthors = () ->
+    http =
+      method: "GET"
+      url: "/books/authors"
+    $http(http)
+      .success (response) ->
+        $scope.authors = response
+        for author in $scope.authors
+          $scope.words.push
+            text: author.name
+            weight: author.num_of_books * 2
+            link: "#/books/authors/" + author.name
+
+  $scope.words = []
+
+  $scope.colors = ["#800026", "#bd0026", "#e31a1c", "#fc4e2a", "#fd8d3c", "#feb24c", "#fed976"]
+
+
+

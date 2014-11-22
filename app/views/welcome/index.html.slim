@@ -1,0 +1,22 @@
+div ng-app='myBookshelf' ng-controller='BooksController' ng-init='nm.book_type="all"; nm.editing = false; nm.book_details = false; nm.more_info = false'
+  .row
+    .col-md-8
+      | <div ng-view></div>
+      div
+        .panel-group
+          .panel.panel-default
+            .panel-heading
+              h4.panel-title
+                i.fa.fa-briefcase.fa-2x
+                | &nbsp;
+                a data-toggle='collapse' ng-click='nm.book_details = !nm.book_details '
+                  strong Book Details
+            .panel-collapse ng-show='nm.book_details'
+              .panel-body
+                = render 'book_details'
+    .col-md-4
+      = render 'welcome/search'
+      = render 'welcome/book_form'
+      = render 'welcome/tagcloud'
+
+

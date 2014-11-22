@@ -1,0 +1,29 @@
+doctype html
+html
+head
+  meta name='viewport' content='width=device-width, initial-scale=1.0'
+  meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1"
+  meta charset='utf-8'
+  title #{Settings.site_name}
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = csrf_meta_tags
+  link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"
+  | <script type='text/javascript'>
+    $(function(){
+      csrf_token = $('meta[name="csrf-token"]').attr['content']
+      jQuery.ajaxSetup({
+        'beforeSend': function(xhr) {
+        xhr.setRequestHeader("Accept", "text/javascript");
+        xhr.setRequestHeader("X-CSRF-Token", csrf_token);
+       }
+      });
+    });
+    </script>
+
+body
+  div.navbar.navbar-inverse
+    .container
+      a.navbar-brand href='#' #{Settings.site_name}
+  div.container
+    = yield

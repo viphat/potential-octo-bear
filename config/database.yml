@@ -1,0 +1,24 @@
+development:
+ adapter: postgresql
+ database: yerabook_dev
+ host: localhost
+ pool: 5
+ timeout: 5000
+ username: postgres
+ password:
+
+test:
+ adapter: postgresql
+ database: yerabook_dev
+ host: localhost
+ pool: 5
+ timeout: 5000
+ username: postgres
+ password:
+
+production:
+ adapter: postgresql
+ database: yerabook_dev
+ host: localhost
+ pool: 5
+ timeout: 5000

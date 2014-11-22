@@ -1,0 +1,18 @@
+div.row
+  div.col-md-6.col-md-offset-3
+    = form_for(@book) do |f|
+      = f.label :title
+      = f.text_field :title, class: 'form-control'
+
+      = f.label :author
+      = f.text_field :author, class: 'form-control'
+
+      = f.label :book_type
+      = radio_button_tag("book[book_type]", "paper",class: 'form-control')
+      = label_tag(:book_type_paper, "Paper")
+      = radio_button_tag("book[book_type]", "ebook",class: 'form-control')
+      = label_tag(:book_type_ebook, "Ebook")
+
+      = f.label :image_url
+      = f.file_field :image_url
+      = f.submit "Create new Book", class: "btn btn-primary"

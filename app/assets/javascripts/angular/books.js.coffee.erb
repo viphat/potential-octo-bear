@@ -1,0 +1,167 @@
+# Place all the behaviors and hooks related to the matching controller here.
+# All this logic will automatically be available in application.js.
+# You can use CoffeeScript in this file: http://coffeescript.org/
+
+app.config ['$httpProvider', ($httpProvider) ->
+  $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content')
+  $httpProvider.defaults.headers.common.Accept = 'application/json'
+]
+
+app.directive 'starRating',($http) ->
+  restrict: "E"
+  temlate: "<input class='rating' type='number'  />"
+  link: (scope,element,attrs) ->
+    book = {}
+    book.rating = attrs.bookRating
+    book.rating ||= 0
+
+    $(element).rating('update', book.rating)
+
+    if (attrs.readOnly == "true")
+      console.log attrs.bookRating
+
+    $(element).on "rating.change", (event, value, caption) ->
+
+      book.id = attrs.bookId
+      book.rating = value
+      http =
+        method: "PATCH"
+        url: "/books/" + book.id
+        data: book
+      $http(http)
+        .success (response) ->
+          console.log 'Vote successful'
+
+
+app.config ($routeProvider) ->
+  $routeProvider
+    .when "/",
+      templateUrl: "<%= asset_path 'angular/all_books.tpl.html' %>"
+    .when "/books/:id",
+      templateUrl: "<%= asset_path 'angular/all_books.tpl.html' %>"
+    .when '/books/authors/:name',
+      templateUrl: "<%= asset_path 'angular/author_books.tpl.html' %>"
+    .otherwise redirectTo: "/"
+
+app.factory "Book", ($resource) ->
+  $resource("/books/:id", { id: "@id" }, {
+    update: { method: "PUT" }
+  })
+
+app.directive "file", ->
+  scope:
+    file: "="
+
+  link: (scope, el, attrs) ->
+    el.bind "change", (event) ->
+      files = event.target.files
+      file = files[0]
+      # scope.file = (if file then file.name else 'undefined')
+      scope.file = file
+      console.log scope.file
+      scope.$apply()
+      return
+    return
+
+bookCtrl = app.controller "BooksController", ($scope, $routeParams, Book, $http, $resource) ->
+
+  $scope.getDetails = (book) ->
+
+    $scope.book_details = []
+
+    url = '/books/title/' + book.title
+    http =
+      method: "GET"
+      url: url
+
+    $http(http)
+      .success (data) ->
+        book = data
+        b = book.image_url
+        c = b.image_url
+        console.log c.url
+        book.image_url = c.url
+        $scope.nm.book_details = true
+        $scope.book_details.push book
+
+  $scope.getBooks = () ->
+    url = "/books"
+    if window.location.href.indexOf('authors') != -1
+      url +=  "/authors/" + encodeURI($routeParams.name)
+      $scope.author = $routeParams.name
+    if $scope.nm.book_type == 'paper'
+      url = url + "/type/paper"
+    if $scope.nm.book_type == 'ebook'
+      url = url + "/type/ebook"
+
+    http =
+      method: "GET"
+      url: url
+      params:
+        page: $scope.currentPage
+
+    $http(http)
+      .success (response) ->
+        $scope.books = response.books
+        $scope.paging = response.meta
+
+  $scope.$watch "nm.book_type", () ->
+    $scope.currentPage = 1
+    $scope.getBooks()
+
+  $scope.save = () ->
+    fd = new FormData()
+
+    fd.append "book[title]", $scope.book.title
+    fd.append "book[author]", $scope.book.author
+    fd.append "book[book_type]", $scope.book.book_type
+    fd.append "book[description]", $scope.book.description
+    fd.append "book[review]", $scope.book.review
+    fd.append "book[image_url]", $scope.book.image_url
+
+    console.log $scope.book.image_url
+    if $scope.book.id?
+      # Book.update($scope.book)
+      url = "/books/" + $scope.book.id
+      $http.put(url,fd, { transformRequest: angular.identity, headers: {'Content-Type':undefined }} )
+        .success (response) ->
+          console.log 'Successful'
+    else
+      # Book.save($scope.book)
+      url = "/books"
+      $http.post(url,fd, { transformRequest: angular.identity, headers: {'Content-Type':undefined }} )
+        .success (response) ->
+          console.log 'Successful'
+
+    $scope.book = {}
+    $scope.bookForm.$setPristine(true)
+    $scope.getBooks()
+
+  $scope.delete = (book) ->
+    Book.delete ( { id: book.id })
+    $scope.getBooks()
+
+  $scope.edit = (book) ->
+    $scope.book = Book.get( { id: book.id } )
+
+  $scope.reset = () ->
+    $scope.book = {}
+    $scope.bookForm.$setPristine(true)
+    $scope.getBooks()
+
+  $scope.setPage = (newPage) ->
+    newPage = 1 if newPage < 1
+    newPage = $scope.paging.number_of_pages if newPage > $scope.paging.number_of_pages
+    $scope.currentPage = newPage
+    $scope.getBooks()
+
+  $scope.$watch "paging", () ->
+    if $scope.paging?
+      $scope.pages = [1..$scope.paging.number_of_pages]
+
+  $scope.$on "$routeChangeSuccess", ($currentRoute, $previousRoute) ->
+    $scope.currentPage = 1
+    $scope.getBooks()
+
+
+

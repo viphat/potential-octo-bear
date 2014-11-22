@@ -1,0 +1,49 @@
+h2 ng-show="!nm.editing" Add New Book
+h2 ng-show="nm.editing" Edit Book
+form enctype="multipart/form-data" ng-submit='save(); nm.editing=false' novalidate="true" name='bookForm'
+  .form-group ng-class="{ 'has-error': bookForm.title.$dirty && bookForm.title.$invalid }"
+    label Title
+    input.form-control name='title' type='text' ng-model='book.title' required="true" ng-minlength="4"
+  .form-group ng-class="{ 'has-error': bookForm.author.$dirty && bookForm.author.$invalid }"
+    label Author
+    input.form-control type='text' name='author' ng-model='book.author' required="true"
+  .form-group ng-class="{ 'has-error': bookForm.book_type.$dirty && bookForm.book_type.$invalid }"
+    label Type: &nbsp;
+    label.radio-inline
+      input type='radio' name='book_type' ng-model='book.book_type' value='paper' ng-required="true" Paper
+    label.radio-inline
+      input type='radio' name='book_type' ng-model='book.book_type' value='ebook' ng-required="true" Ebook
+    .form-group
+      label Description
+      input.form-control name='description' type='text' ng-model='book.description'
+    .form-group
+      label Review
+      |<textarea id="pagedownEditor" ng-model='book.review' class="form-control" rows="10"></textarea>
+    .form-group
+      label Book Cover &nbsp;
+      span.btn.btn-primary.btn-file
+        |Browse
+        |<input id="input-id" type="file" class="form-control file" data-file="book.image_url">
+      |&nbsp; <span id='input-id-label'></span>
+  button.btn.btn-primary ng-disabled="bookForm.$invalid"
+    | Save
+  | &nbsp;
+  button.btn.btn-primary ng-click='reset(); nm.editing=false'
+    | Reset
+
+javascript:
+  (function () {
+    $("textarea#pagedownEditor").pagedownBootstrap();
+
+    $(document).on('change', '.btn-file :file', function() {
+      var input = $(this),
+          numFiles = input.get(0).files ? input.get(0).files.length : 1,
+          label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+      input.trigger('fileselect', [numFiles, label]);
+    });
+
+    $('.btn-file :file').on('fileselect', function(event, numFiles, label) {
+        $('#input-id-label').html(label);
+    });
+
+  })();

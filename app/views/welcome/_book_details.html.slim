@@ -1,0 +1,27 @@
+.row ng-repeat='b in book_details'
+  table.table.table-bordered.table-responsive
+    tr
+      th colspan='2'
+        h1.text-center {{ b.title }}
+    tr
+      td
+        strong Author
+      td {{ b.author }}
+    tr
+      td
+        strong Desciption
+      td {{ b.description }}
+    tr
+      td
+        strong Review
+      td
+        span ng-bind-html="b.review"
+    tr
+      td
+        strong Rating
+      td
+        |<star-rating read-only="true" book-rating='{{ b.rating }}'></star-rating>
+    tr
+      td colspan='2'
+        .text-center
+          |<img ng-src="{{ b.image_url }}" />

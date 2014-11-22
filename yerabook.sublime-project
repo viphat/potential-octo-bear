@@ -1,0 +1,21 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/home/viphat/Dropbox/Rails/angularails"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/home/viphat/Dropbox/Bootstrap_Angular"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/home/viphat/Dropbox/Rails/sample_app"
+		}
+	]
+}
