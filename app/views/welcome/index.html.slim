@@ -1,6 +1,11 @@
-div ng-app='myBookshelf' ng-controller='BooksController' ng-init='nm.book_type="all"; nm.editing = false; nm.book_details = false; nm.more_info = false'
+div ng-app='myBookshelf' ng-controller='BooksController' ng-init='nm.book_type="all"; nm.editing = false; nm.book_details = false; nm.more_info = false; getCovers();'
   .row
     .col-md-8
+      .row
+        ul.image rn-carousel='' rn-carousel-controls='' rn-carousel-auto-slide='5' rn-carousel-transition='fadeAndSlide'
+          li ng-repeat='image in bookCovers'
+            .layer
+              img.imgCover ng-src="{{image.url}}" width='260px' height='320px'
       | <div ng-view></div>
       div
         .panel-group
@@ -18,5 +23,10 @@ div ng-app='myBookshelf' ng-controller='BooksController' ng-init='nm.book_type="
       = render 'welcome/search'
       = render 'welcome/book_form'
       = render 'welcome/tagcloud'
+
+javascript:
+  $(function() {
+    $( ".imgCover" ).aeImageResize({ height: 330, width: 260 });
+  });
 
 

@@ -11,6 +11,6 @@
     "bootstrap-star-rating": "latest",
     "jquery": "latest",
     "angular-sanitize": "latest",
-    "bootstrap-fileinput": "latest"
+    "angular-carousel": "latest"
   }
 }

@@ -65,6 +65,25 @@ app.directive "file", ->
 
 bookCtrl = app.controller "BooksController", ($scope, $routeParams, Book, $http, $resource) ->
 
+  $scope.getCovers = () ->
+    url = "/books/random"
+    $scope.bookCovers = []
+
+    http =
+      method: "GET"
+      url: url
+
+    $http(http)
+      .success (response) ->
+        books = response.books
+        for i in [0...books.length]
+          book = {}
+          book.url = books[i].image_url.image_url.url
+          book.title = books[i].title
+          $scope.bookCovers.push book
+
+
+
   $scope.getDetails = (book) ->
 
     $scope.book_details = []
@@ -115,8 +134,10 @@ bookCtrl = app.controller "BooksController", ($scope, $routeParams, Book, $http,
     fd.append "book[title]", $scope.book.title
     fd.append "book[author]", $scope.book.author
     fd.append "book[book_type]", $scope.book.book_type
-    fd.append "book[description]", $scope.book.description
-    fd.append "book[review]", $scope.book.review
+    if $scope.book.description != null
+      fd.append "book[description]", $scope.book.description
+    if $scope.book.review != null
+      fd.append "book[review]", $scope.book.review
     fd.append "book[image_url]", $scope.book.image_url
 
     console.log $scope.book.image_url

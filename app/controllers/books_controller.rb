@@ -27,6 +27,11 @@ class BooksController < ApplicationController
            }
   end
 
+  def get_random_book
+    @books = Book.where.not(:image_url => nil).order('RANDOM()').take(5)
+    render json: @books,  each_serializer: BookSerializer
+  end
+
   def filter_author_and_book_type
     author = params[:author]
     book_type = params[:book_type]

@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'books/authors' => 'books#authors_tag'
 
   get 'books/title/:title' => 'books#load_book_details'
+  get 'books/random' => 'books#get_random_book'
 
   get 'books/authors/:author' => 'books#filter_author', :author => /[^\/]+/
 

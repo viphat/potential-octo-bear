@@ -35,7 +35,6 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
 # Vi Phat
 gem 'pg'
 gem 'enumerize'
@@ -54,11 +53,17 @@ gem 'redcarpet'
 gem 'carrierwave'
 gem 'mini_magick'
 
-
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
 
-
-
+group :test do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'selenium-webdriver'
+  gem 'faker'
+end
