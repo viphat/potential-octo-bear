@@ -39,5 +39,4 @@ describe Book do
     expect(build(:book, title: "a" * 256)).not_to be_valid
   end
 
-
 end

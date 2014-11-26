@@ -9,7 +9,7 @@ development:
 
 test:
  adapter: postgresql
- database: yerabook_dev
+ database: yerabook_test
  host: localhost
  pool: 5
  timeout: 5000
@@ -18,7 +18,7 @@ test:
 
 production:
  adapter: postgresql
- database: yerabook_dev
+ database: yerabook_proc
  host: localhost
  pool: 5
  timeout: 5000
