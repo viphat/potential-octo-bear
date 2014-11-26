@@ -13,7 +13,6 @@
  *= require bootstrap/dist/css/bootstrap-theme.min
  *= require jqcloud2/dist/jqcloud.min
  *= require bootstrap-star-rating/css/star-rating.min
- *= require font-awesome
  *= require jquery.pagedown-bootstrap
  *= require angular-carousel/dist/angular-carousel.min
  *= require_tree .
@@ -22,10 +21,9 @@
 
 
 @font-face {
-    font-family: 'Glyphicons Halflings';
-    src: asset_url('glyphicons-halflings-regular.eot');
-    src: asset_url('glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), asset_url('glyphicons-halflings-regular.woff') format('woff'), asset_url('glyphicons-halflings-regular.ttf') format('truetype'), asset_url('glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
-
+  font-family: 'Glyphicons Halflings';
+  src: asset_url('glyphicons-halflings-regular.eot');
+  src: asset_url('glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), asset_url('glyphicons-halflings-regular.woff') format('woff'), asset_url('glyphicons-halflings-regular.ttf') format('truetype'), asset_url('glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
 .btn-file {
