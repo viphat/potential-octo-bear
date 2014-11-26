@@ -12,7 +12,6 @@
 //
 //= require jquery/dist/jquery.min
 //= require jquery_ujs
-//= require turbolinks
 //= require angular/angular
 //= require jqcloud2/dist/jqcloud
 //= require angular-jqcloud/angular-jqcloud
