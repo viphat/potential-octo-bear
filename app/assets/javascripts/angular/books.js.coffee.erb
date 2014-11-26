@@ -11,7 +11,7 @@ $(document).on('ready page:load', ->
   angular.bootstrap(document,['myBookshelf'])
 )
 
-app.directive 'starRating',($http) ->
+app.directive 'starRating', [ '$http', ($http) ->
   restrict: "E"
   temlate: "<input class='rating' type='number'  />"
   link: (scope,element,attrs) ->
@@ -36,8 +36,9 @@ app.directive 'starRating',($http) ->
         .success (response) ->
           console.log 'Vote successful'
 
+]
 
-app.config ($routeProvider) ->
+app.config [ '$routeProvider', ($routeProvider) ->
   $routeProvider
     .when "/",
       templateUrl: "<%= asset_path 'angular/all_books.tpl.html' %>"
@@ -46,13 +47,15 @@ app.config ($routeProvider) ->
     .when '/books/authors/:name',
       templateUrl: "<%= asset_path 'angular/author_books.tpl.html' %>"
     .otherwise redirectTo: "/"
+]
 
-app.factory "Book", ($resource) ->
+app.factory "Book", [ '$resource', ($resource) ->
   $resource("/books/:id", { id: "@id" }, {
     update: { method: "PUT" }
   })
+]
 
-app.directive "file", ->
+app.directive "file", [ ->
   scope:
     file: "="
 
@@ -66,8 +69,9 @@ app.directive "file", ->
       scope.$apply()
       return
     return
+]
 
-bookCtrl = app.controller "BooksController", ($scope, $routeParams, Book, $http, $resource) ->
+bookCtrl = app.controller "BooksController", [ '$scope','$routeParams', 'Book', '$http', '$resource',  ($scope, $routeParams, Book, $http, $resource) ->
 
   # $scope.getCovers = () ->
   #   url = "/books/random"
@@ -186,5 +190,4 @@ bookCtrl = app.controller "BooksController", ($scope, $routeParams, Book, $http,
     $scope.currentPage = 1
     $scope.getBooks()
 
-
-
+]
