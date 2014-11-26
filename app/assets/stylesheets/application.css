@@ -50,7 +50,7 @@
     display: none;
 }
 
-ul[rn-carousel] {
+ul.rn-carousel {
   width: 300px;
   height: 350px;
   margin: 0 auto;
