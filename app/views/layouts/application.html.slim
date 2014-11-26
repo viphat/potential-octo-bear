@@ -11,19 +11,6 @@ head
   link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
   link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"
 
-
-  | <script type='text/javascript'>
-    $(function(){
-      csrf_token = $('meta[name="csrf-token"]').attr['content']
-      jQuery.ajaxSetup({
-        'beforeSend': function(xhr) {
-        xhr.setRequestHeader("Accept", "text/javascript");
-        xhr.setRequestHeader("X-CSRF-Token", csrf_token);
-       }
-      });
-    });
-    </script>
-
 body
   div.navbar.navbar-inverse
     .container
