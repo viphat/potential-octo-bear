@@ -7,6 +7,11 @@ app.config ['$httpProvider', ($httpProvider) ->
   $httpProvider.defaults.headers.common.Accept = 'application/json'
 ]
 
+$(document).on 'page:load', ->
+  $('[ng-app]').each ->
+    module = $(this).attr('ng-app')
+    angular.bootstrap(this, [module])
+
 app.directive 'starRating',($http) ->
   restrict: "E"
   temlate: "<input class='rating' type='number'  />"
