@@ -5,8 +5,13 @@ head
   meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1"
   meta charset='utf-8'
   title #{Settings.site_name}
-  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  # = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+  = stylesheet_link_tag    'application', media: 'all'
+
+  # = javascript_include_tag 'application', 'data-turbolinks-track' => true
+
+  = javascript_include_tag 'application'
+
   = csrf_meta_tags
   link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
   link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"
