@@ -53,6 +53,7 @@ gem 'redcarpet'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'non-stupid-digest-assets'
+gem 'angular-rails-templates'
 
 group :development do
   gem 'better_errors'

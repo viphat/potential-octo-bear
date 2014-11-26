@@ -20,13 +20,16 @@
 //= require angular-resource/angular-resource.min
 //= require angular-bootstrap/ui-bootstrap-tpls.min
 //= require angular-bootstrap/ui-bootstrap.min
-
 //= require angular-sanitize/angular-sanitize.min
 //= require bootstrap-star-rating/js/star-rating
 //= require jquery.pagedown-bootstrap.combined.min
 //= require angular-touch/angular-touch.min
 //= require angular-carousel/dist/angular-carousel.min
 //= require jquery.ae.image.resize.min
+//= require angular-rails-templates
+
+
+//= require_tree ./templates
 
 //= require angular_application
 //= require_tree .
