@@ -52,6 +52,7 @@ gem 'bower-rails', '~> 0.9.1'
 gem 'redcarpet'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'non-stupid-digest-assets'
 
 group :development do
   gem 'better_errors'
