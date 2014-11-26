@@ -1,11 +1,8 @@
 div ng-app='myBookshelf' data-no-turbolink='' ng-controller='BooksController' ng-init='nm.book_type="all"; nm.editing = false; nm.book_details = false; nm.more_info = false; getCovers();'
   .row
     .col-md-8
-      / .row
-      /   ul.image rn-carousel='' rn-carousel-controls='' rn-carousel-auto-slide='5' rn-carousel-transition='fadeAndSlide'
-      /     li ng-repeat='image in bookCovers'
-      /       .layer
-      /         img.imgCover ng-src="{{image.url}}" width='260px' height='320px'
+      div
+        span bbbbbbbb
       | <div ng-view></div>
       div
         .panel-group
