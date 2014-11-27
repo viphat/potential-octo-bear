@@ -53,7 +53,7 @@ gem 'redcarpet'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'non-stupid-digest-assets'
-# gem 'angular-rails-templates'
+gem 'angular-rails-templates'
 gem "i18n-js"
 
 group :development do

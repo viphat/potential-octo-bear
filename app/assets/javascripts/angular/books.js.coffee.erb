@@ -35,17 +35,16 @@ app.directive 'starRating', [ '$http', ($http) ->
       $http(http)
         .success (response) ->
           console.log 'Vote successful'
-
 ]
 
 app.config [ '$routeProvider', ($routeProvider) ->
   $routeProvider
     .when "/",
-      templateUrl: "<%= asset_path 'templates/all_books.html' %>"
+      templateUrl: 'all_books.html'
     .when "/books/:id",
-      templateUrl: "<%= asset_path 'templates/all_books.html' %>"
+      templateUrl: 'all_books.html'
     .when '/books/authors/:name',
-      templateUrl: "<%= asset_path 'templates/author_books.html' %>"
+      templateUrl: 'author_books.html'
     .otherwise redirectTo: "/"
 ]
 

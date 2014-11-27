@@ -25,11 +25,14 @@
 //= require jquery.pagedown-bootstrap.combined.min
 //= require angular-touch/angular-touch.min
 //= require angular-carousel/dist/angular-carousel.min
+//= require angular-rails-templates
+
 //= require jquery.ae.image.resize.min
 //= require i18n
 //= require i18n/translations
 
 //= require angular_application
+//= require_tree ./templates
 //= require_tree .
 
 
