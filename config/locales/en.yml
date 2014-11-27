@@ -21,3 +21,9 @@
 
 en:
   hello: "Hello world"
+  books:
+    title: "Title"
+    author: "Author"
+    create_new_book: "Create New Book"
+
+

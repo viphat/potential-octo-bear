@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"create",
+				"create_new_book"
+			],
+			[
 				"book",
 				"bookCovers"
 			],
@@ -251,7 +255,7 @@
 			"file": "app/assets/javascripts/templates/author_books.html.slim",
 			"settings":
 			{
-				"buffer_size": 1314,
+				"buffer_size": 1298,
 				"line_ending": "Unix"
 			}
 		},
@@ -259,7 +263,23 @@
 			"file": "app/assets/javascripts/templates/all_books.html.slim",
 			"settings":
 			{
-				"buffer_size": 1244,
+				"buffer_size": 1271,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/books/new.html.slim",
+			"settings":
+			{
+				"buffer_size": 616,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/locales/en.yml",
+			"settings":
+			{
+				"buffer_size": 724,
 				"line_ending": "Unix"
 			}
 		},
@@ -307,7 +327,15 @@
 			"file": "Gemfile",
 			"settings":
 			{
-				"buffer_size": 2007,
+				"buffer_size": 2021,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/application.rb",
+			"settings":
+			{
+				"buffer_size": 1517,
 				"line_ending": "Unix"
 			}
 		},
@@ -315,7 +343,7 @@
 			"file": "app/assets/javascripts/application.js",
 			"settings":
 			{
-				"buffer_size": 1391,
+				"buffer_size": 1437,
 				"line_ending": "Unix"
 			}
 		},
@@ -386,12 +414,6 @@
 	[
 		"/home/viphat/Dropbox/Rails/yerabook",
 		"/home/viphat/Dropbox/Rails/yerabook/app",
-		"/home/viphat/Dropbox/Rails/yerabook/app/assets",
-		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts",
-		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/angular",
-		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/templates",
-		"/home/viphat/Dropbox/Rails/yerabook/app/assets/stylesheets",
-		"/home/viphat/Dropbox/Rails/yerabook/app/controllers",
 		"/home/viphat/Dropbox/Rails/yerabook/app/models",
 		"/home/viphat/Dropbox/Rails/yerabook/app/views",
 		"/home/viphat/Dropbox/Rails/yerabook/app/views/books",
@@ -400,6 +422,7 @@
 		"/home/viphat/Dropbox/Rails/yerabook/config",
 		"/home/viphat/Dropbox/Rails/yerabook/config/environments",
 		"/home/viphat/Dropbox/Rails/yerabook/config/initializers",
+		"/home/viphat/Dropbox/Rails/yerabook/config/locales",
 		"/home/viphat/Dropbox/Rails/yerabook/db",
 		"/home/viphat/Dropbox/Rails/yerabook/spec",
 		"/home/viphat/Dropbox/Rails/yerabook/spec/models",
@@ -744,7 +767,7 @@
 						"translation.y": 864.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -753,43 +776,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1314,
+						"buffer_size": 1298,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/assets/javascripts/templates/all_books.html.slim",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1244,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								30,
-								30
+								11,
+								11
 							]
 						],
 						"settings":
@@ -901,7 +896,403 @@
 							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 296.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/assets/javascripts/templates/all_books.html.slim",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								565,
+								565
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 274.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/books/new.html.slim",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 616,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								588,
+								588
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "config/locales/en.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 724,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								720,
+								720
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 166.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -910,11 +1301,11 @@
 			]
 		},
 		{
-			"selected": 4,
+			"selected": 5,
 			"sheets":
 			[
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "app/assets/stylesheets/application.css",
 					"semi_transient": false,
 					"settings":
@@ -1042,11 +1433,11 @@
 						"translation.y": 488.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 6,
 					"file": "config/environments/production.rb",
 					"semi_transient": false,
 					"settings":
@@ -1174,11 +1565,11 @@
 						"translation.y": 432.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 7,
 					"file": "Bowerfile",
 					"semi_transient": false,
 					"settings":
@@ -1306,11 +1697,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 8,
 					"file": "config/initializers/assets.rb",
 					"semi_transient": false,
 					"settings":
@@ -1438,11 +1829,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 9,
 					"file": "app/views/welcome/index.html.slim",
 					"semi_transient": false,
 					"settings":
@@ -1454,8 +1845,8 @@
 						"selection":
 						[
 							[
-								236,
-								236
+								208,
+								208
 							]
 						],
 						"settings":
@@ -1570,24 +1961,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 10,
 					"file": "Gemfile",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2007,
+						"buffer_size": 2021,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1735,
-								1735
+								1780,
+								1780
 							]
 						],
 						"settings":
@@ -1699,27 +2090,159 @@
 							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 918.0,
+						"translation.y": 868.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "app/assets/javascripts/application.js",
+					"buffer": 11,
+					"file": "config/application.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1391,
+						"buffer_size": 1517,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1368,
-								1368
+								1500,
+								1500
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 508.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/assets/javascripts/application.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1437,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1351,
+								1351
 							]
 						],
 						"settings":
@@ -1831,14 +2354,14 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 452.0,
+						"translation.y": 432.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 13,
 					"file": "app/assets/javascripts/angular_application.js",
 					"semi_transient": false,
 					"settings":
@@ -1966,11 +2489,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 14,
 					"file": "app/views/layouts/application.html.slim",
 					"semi_transient": false,
 					"settings":
@@ -2098,7 +2621,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 12,
 					"type": "text"
 				}
 			]
@@ -2224,7 +2747,7 @@
 		],
 		"width": 660.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},

@@ -36,6 +36,7 @@ module Yerabook
     end
 
     config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
+    config.assets.initialize_on_precompile = true
 
   end
 end

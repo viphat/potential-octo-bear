@@ -16,8 +16,8 @@ div.row
 table.table.table-striped
   tr
     th #
-    th Title
-    th Author
+    th I18n.t("books.title");
+    th t "books.author"
   tr ng-repeat='book in books'
     td style='width:120px;'
       .btn.btn-default ng-click='edit(book); nm.editing=true; '
