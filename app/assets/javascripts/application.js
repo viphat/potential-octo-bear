@@ -26,11 +26,8 @@
 //= require angular-touch/angular-touch.min
 //= require angular-carousel/dist/angular-carousel.min
 //= require jquery.ae.image.resize.min
-//= require angular-rails-templates
 //= require i18n
 //= require i18n/translations
-
-//= require_tree ./templates
 
 //= require angular_application
 //= require_tree .

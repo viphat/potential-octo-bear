@@ -41,11 +41,11 @@ app.directive 'starRating', [ '$http', ($http) ->
 app.config [ '$routeProvider', ($routeProvider) ->
   $routeProvider
     .when "/",
-      templateUrl: 'all_books.html'
+      templateUrl: "<%= asset_path 'templates/all_books.html' %>"
     .when "/books/:id",
-      templateUrl: 'all_books.html'
+      templateUrl: "<%= asset_path 'templates/all_books.html' %>"
     .when '/books/authors/:name',
-      templateUrl: 'author_books.html'
+      templateUrl: "<%= asset_path 'templates/author_books.html' %>"
     .otherwise redirectTo: "/"
 ]
 

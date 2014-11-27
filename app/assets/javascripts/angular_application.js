@@ -1,6 +1,7 @@
 //= require_self
 
-var app = angular.module("myBookshelf", ["ngResource","ngRoute","angular-jqcloud",'ngSanitize','angular-carousel','templates']);
+var app = angular.module('myBookshelf', ['ngResource','ngRoute','angular-jqcloud','ngSanitize']);
 
 //"angular-jqcloud"
 //'ui.tinymce'
+//'angular-carousel','templates'
