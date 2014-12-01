@@ -71,13 +71,14 @@ app.directive "file", [ ->
     return
 ]
 
-app.directive "pagedownEditor", ->
+app.directive "pagedownEditor", [ ->
   restrict: "A"
   link: (scope, element, attrs) ->
     $(element).pagedownBootstrap()
     return
+]
 
-app.directive "jqueryFile", ->
+app.directive "jqueryFile", [ ->
   restrict: "A"
   link: (scope, element, attrs) ->
     $(document).on "change", ".btn-file :file", ->
@@ -92,6 +93,7 @@ app.directive "jqueryFile", ->
     $(".btn-file :file").on "fileselect", (event, numFiles, label) ->
       $("#input-id-label").html label
       return
+]
 
 bookCtrl = app.controller "BooksController", [ '$scope','$routeParams', 'Book', '$http', '$resource',  ($scope, $routeParams, Book, $http, $resource) ->
 
@@ -174,14 +176,16 @@ bookCtrl = app.controller "BooksController", [ '$scope','$routeParams', 'Book', 
       $http.put(url,fd, { transformRequest: angular.identity, headers: {'Content-Type':undefined }} )
         .success (response) ->
           console.log 'Successful'
+          $scope.getBooks()
     else
       # Book.save($scope.book)
       url = "/books"
       $http.post(url,fd, { transformRequest: angular.identity, headers: {'Content-Type':undefined }} )
         .success (response) ->
           console.log 'Successful'
+          $scope.getBooks()
 
-    $scope.getBooks()
+
 
     $scope.book = {}
     $scope.bookForm.$setPristine(true)
