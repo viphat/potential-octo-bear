@@ -54,7 +54,9 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'non-stupid-digest-assets'
 gem 'angular-rails-templates'
-gem "i18n-js"
+gem 'i18n-js'
+# Force using Pry insteaf of IRB when run rails console
+gem 'pry-rails'
 
 group :development do
   gem 'better_errors'
