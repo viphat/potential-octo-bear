@@ -13,37 +13,31 @@ form enctype="multipart/form-data" ng-submit='save(); nm.editing=false' novalida
       input type='radio' name='book_type' ng-model='book.book_type' value='paper' ng-required="true" Paper
     label.radio-inline
       input type='radio' name='book_type' ng-model='book.book_type' value='ebook' ng-required="true" Ebook
-    .form-group
-      label Description
-      input.form-control name='description' type='text' ng-model='book.description'
-    .form-group
-      label Review
-      |<textarea id="pagedownEditor" ng-model='book.review' class="form-control" rows="10"></textarea>
-    .form-group
-      label Book Cover &nbsp;
-      span.btn.btn-primary.btn-file
-        |Browse
-        |<input id="input-id" type="file" class="form-control file" data-file="book.image_url">
-      |&nbsp; <span id='input-id-label'></span>
+    .panel-group
+      .panel.panel-default
+        .panel-heading
+          h4.panel-title
+            i.fa.fa-info
+            | &nbsp;
+            a data-toggle='collapse' ng-click='nm.more_info = !nm.more_info '
+              strong Input More Info
+        .panel-collapse ng-show='nm.more_info'
+          .panel-body
+            .form-group
+              label Description
+              input.form-control name='description' type='text' ng-model='book.description'
+            .form-group
+              label Review
+              |<textarea id="pagedownEditor" ng-model='book.review' class="form-control" rows="10" pagedown-editor></textarea>
+            .form-group
+              label Book Cover &nbsp;
+              span.btn.btn-primary.btn-file
+                |Browse
+                |<input id="input-id" type="file" class="form-control file" data-file="book.image_url" jquery-file>
+              |&nbsp; <span id='input-id-label'></span>
+
   button.btn.btn-primary ng-disabled="bookForm.$invalid"
     | Save
   | &nbsp;
   button.btn.btn-primary ng-click='reset(); nm.editing=false'
     | Reset
-
-javascript:
-  (function () {
-    $("textarea#pagedownEditor").pagedownBootstrap();
-
-    $(document).on('change', '.btn-file :file', function() {
-      var input = $(this),
-          numFiles = input.get(0).files ? input.get(0).files.length : 1,
-          label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-      input.trigger('fileselect', [numFiles, label]);
-    });
-
-    $('.btn-file :file').on('fileselect', function(event, numFiles, label) {
-        $('#input-id-label').html(label);
-    });
-
-  })();

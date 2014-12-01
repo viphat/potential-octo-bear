@@ -18,8 +18,6 @@ app.directive 'starRating', [ '$http', ($http) ->
     book = {}
     book.rating = attrs.bookRating
     book.rating ||= 0
-    console.log 'aaaa'
-
 
     if (attrs.readOnly == "true")
       console.log attrs.bookRating
@@ -68,30 +66,51 @@ app.directive "file", [ ->
       file = files[0]
       # scope.file = (if file then file.name else 'undefined')
       scope.file = file
-      console.log scope.file
       scope.$apply()
       return
     return
 ]
 
+app.directive "pagedownEditor", ->
+  restrict: "A"
+  link: (scope, element, attrs) ->
+    $(element).pagedownBootstrap()
+    return
+
+app.directive "jqueryFile", ->
+  restrict: "A"
+  link: (scope, element, attrs) ->
+    $(document).on "change", ".btn-file :file", ->
+      input = $(this)
+      numFiles = (if input.get(0).files then input.get(0).files.length else 1)
+      label = input.val().replace(/\\/g, "/").replace(/.*\//, "")
+      input.trigger "fileselect", [
+        numFiles
+        label
+      ]
+      return
+    $(".btn-file :file").on "fileselect", (event, numFiles, label) ->
+      $("#input-id-label").html label
+      return
+
 bookCtrl = app.controller "BooksController", [ '$scope','$routeParams', 'Book', '$http', '$resource',  ($scope, $routeParams, Book, $http, $resource) ->
 
-  # $scope.getCovers = () ->
-  #   url = "/books/random"
-  #   $scope.bookCovers = []
+  $scope.getCovers = () ->
+    url = "/books/random"
+    $scope.bookCovers = []
 
-  #   http =
-  #     method: "GET"
-  #     url: url
+    http =
+      method: "GET"
+      url: url
 
-  #   $http(http)
-  #     .success (response) ->
-  #       books = response.books
-  #       for i in [0...books.length]
-  #         book = {}
-  #         book.url = books[i].image_url.image_url.url
-  #         book.title = books[i].title
-  #         $scope.bookCovers.push book
+    $http(http)
+      .success (response) ->
+        books = response.books
+        for i in [0...books.length]
+          book = {}
+          book.url = books[i].image_url.image_url.url
+          book.title = books[i].title
+          $scope.bookCovers.push book
 
   $scope.getDetails = (book) ->
 
@@ -143,13 +162,12 @@ bookCtrl = app.controller "BooksController", [ '$scope','$routeParams', 'Book', 
     fd.append "book[title]", $scope.book.title
     fd.append "book[author]", $scope.book.author
     fd.append "book[book_type]", $scope.book.book_type
-    if $scope.book.description != null && $scope.book.description != 'undefined'
+    if $scope.book.description?
       fd.append "book[description]", $scope.book.description
-    if $scope.book.review != null && $scope.book.review != 'undefined'
+    if $scope.book.review?
       fd.append "book[review]", $scope.book.review
     fd.append "book[image_url]", $scope.book.image_url
 
-    console.log $scope.book.image_url
     if $scope.book.id?
       # Book.update($scope.book)
       url = "/books/" + $scope.book.id
@@ -162,6 +180,8 @@ bookCtrl = app.controller "BooksController", [ '$scope','$routeParams', 'Book', 
       $http.post(url,fd, { transformRequest: angular.identity, headers: {'Content-Type':undefined }} )
         .success (response) ->
           console.log 'Successful'
+
+    $scope.getBooks()
 
     $scope.book = {}
     $scope.bookForm.$setPristine(true)
