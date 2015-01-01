@@ -7,10 +7,10 @@
     "angular-resource": "latest",
     "angular-route": "latest",
     "angular-bootstrap": "latest",
-    "components-font-awesome": "latest",
     "bootstrap-star-rating": "latest",
     "jquery": "latest",
     "angular-sanitize": "latest",
-    "angular-carousel": "latest"
+    "angular-carousel": "latest",
+    "angucomplete-alt": "latest"
   }
 }

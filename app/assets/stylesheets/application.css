@@ -15,6 +15,7 @@
  *= require bootstrap-star-rating/css/star-rating.min
  *= require jquery.pagedown-bootstrap
  *= require angular-carousel/dist/angular-carousel.min
+ *= require angucomplete-alt/angucomplete-alt
  *= require_tree .
  *= require_self
  */
@@ -43,6 +44,13 @@
 ::-ms-tooltip {
     display: none;
 }
+
+
+.angucomplete-dropdown {
+  overflow-y: auto;
+  max-height: 200px;
+}
+
 
 /*
 ul.rn-carousel {

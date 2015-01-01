@@ -4,8 +4,15 @@ class BooksController < ApplicationController
 
   before_action :set_book, only: [:show, :edit, :update, :destroy]
 
+  def search_by_title
+    if (params[:title].present?)
+      @books = Book.where('title ILIKE ?', "%#{params[:title]}%").order(:created_at)
+      render json: @books,  each_serializer: BookSerializer
+    end
+  end
+
   def index
-    @books = Book.page(params[:page]).per(Settings.record_per_page)
+    @books = Book.order(:created_at).page(params[:page]).per(Settings.record_per_page)
     render json: @books,  each_serializer: BookSerializer,
            meta: {
              number_of_pages: @books.num_pages,
@@ -17,6 +24,7 @@ class BooksController < ApplicationController
   def filter_book_type
     book_type = params[:book_type]
     @books = Book.where(book_type: book_type)
+                 .order(:created_at)
                  .page(params[:page])
                  .per(Settings.record_per_page)
     render json: @books,  each_serializer: BookSerializer,
@@ -35,7 +43,7 @@ class BooksController < ApplicationController
   def filter_author_and_book_type
     author = params[:author]
     book_type = params[:book_type]
-    @books = Book.where('author like ? And book_type = ?',
+    @books = Book.order(:created_at).where('author like ? And book_type = ?',
                         "%#{author}%",
                         book_type )
                  .page(params[:page])
@@ -69,9 +77,8 @@ class BooksController < ApplicationController
   end
 
   def filter_author
-
     author = params[:author]
-    @books = Book.where('author like ?', "%#{author}%")
+    @books = Book.order(:created_at).where('author like ?', "%#{author}%")
                  .page(params[:page])
                  .per(Settings.record_per_page)
     render json: @books,  each_serializer: BookSerializer,

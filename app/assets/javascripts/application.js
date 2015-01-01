@@ -26,7 +26,7 @@
 //= require angular-touch/angular-touch.min
 //= require angular-carousel/dist/angular-carousel.min
 //= require angular-rails-templates
-
+//= require angucomplete-alt/dist/angucomplete-alt.min
 //= require jquery.ae.image.resize.min
 //= require i18n
 //= require i18n/translations
