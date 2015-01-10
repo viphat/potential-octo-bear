@@ -18,9 +18,9 @@ test:
 
 production:
  adapter: postgresql
- database: yerabook_proc
+ database: yerabooks
  host: localhost
  pool: 5
  timeout: 5000
  username: postgres
- password:
+ password: fan3chip
