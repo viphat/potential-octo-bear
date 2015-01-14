@@ -97,6 +97,12 @@ app.directive "jqueryFile", [ ->
 
 bookCtrl = app.controller "BooksController", [ '$scope','$routeParams', 'Book', '$http', '$resource',  ($scope, $routeParams, Book, $http, $resource) ->
 
+  $scope.searchBooks = (val) ->
+    url = "/books/search/" + val
+    $http.get(url).then (response) ->
+      response.data.books.map (book) ->
+        book.title
+
   $scope.getCovers = () ->
     url = "/books/random"
     $scope.bookCovers = []
@@ -184,8 +190,6 @@ bookCtrl = app.controller "BooksController", [ '$scope','$routeParams', 'Book', 
         .success (response) ->
           console.log 'Successful'
           $scope.getBooks()
-
-
 
     $scope.book = {}
     $scope.bookForm.$setPristine(true)

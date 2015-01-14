@@ -18,8 +18,7 @@
 //= require bootstrap/dist/js/bootstrap.min
 //= require angular-route/angular-route.min
 //= require angular-resource/angular-resource.min
-//= require angular-bootstrap/ui-bootstrap-tpls.min
-//= require angular-bootstrap/ui-bootstrap.min
+//= require angular-ui-bootstrap
 //= require angular-sanitize/angular-sanitize.min
 //= require bootstrap-star-rating/js/star-rating
 //= require jquery.pagedown-bootstrap.combined.min

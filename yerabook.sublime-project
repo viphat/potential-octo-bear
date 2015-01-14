@@ -20,6 +20,10 @@
 		{
 			"follow_symlinks": true,
 			"path": "/home/viphat/Dropbox/Rails/Udemy-JumpStartAngularJS"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/home/viphat/Downloads/bootstrap-master/template"
 		}
 	]
 }

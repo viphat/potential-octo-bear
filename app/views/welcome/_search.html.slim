@@ -2,4 +2,5 @@ form
 .input-group.input-group-lg
   span.input-group-addon
     i.fa.fa-search.fa-lg
-  angucomplete-alt id='title' placeholder="Search Title" pause='400' remote-url='/books/search/' input-class='form-control form-controll-small' selected-objet='' minlength='3' remote-url-data-field='books' title-field='title' field-required='true' field-required-class='autocomplete-required' match-class='highlight'
+  / angucomplete-alt id='title' placeholder="Search Title" pause='400' remote-url='/books/search/' input-class='form-control form-controll-small' selected-objet='' minlength='3' remote-url-data-field='books' title-field='title' field-required='true' field-required-class='autocomplete-required' match-class='highlight'
+  input type='text' ng-model='SelectedBook' typeahead-wait-ms='100' placeholder='Search Books by Title' class='form-control' typeahead='book for book in searchBooks($viewValue)'
