@@ -260,14 +260,6 @@
 			}
 		},
 		{
-			"file": "app/assets/stylesheets/application.css",
-			"settings":
-			{
-				"buffer_size": 1497,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "Gemfile",
 			"settings":
 			{
@@ -350,9 +342,6 @@
 	[
 		"/home/viphat/Dropbox/Rails/yerabook",
 		"/home/viphat/Dropbox/Rails/yerabook/app",
-		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/angular",
-		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/templates",
-		"/home/viphat/Dropbox/Rails/yerabook/app/assets/stylesheets",
 		"/home/viphat/Dropbox/Rails/yerabook/app/serializers",
 		"/home/viphat/Dropbox/Rails/yerabook/app/uploaders",
 		"/home/viphat/Dropbox/Rails/yerabook/app/views",
@@ -368,11 +357,21 @@
 		"/home/viphat/Dropbox/Rails/yerabook/vendor",
 		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets",
 		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components",
-		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/angular-bootstrap",
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/angular-touch",
 		"/home/viphat/Downloads/bootstrap-master/template"
 	],
 	"file_history":
 	[
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/jquery/src/deprecated.js",
+		"/home/viphat/Dropbox/Rails/yerabook/log/development.log",
+		"/home/viphat/Dropbox/Rails/angularails/tmp/cache/assets/development/sass/f0675edf13c0b0ef3e6f4b2f14e59d3f3642d726/_responsive-visibility.scssc",
+		"/home/viphat/Dropbox/Rails/yerabook/config/database.yml",
+		"/home/viphat/Dropbox/Rails/sample_app/config/initializers/filter_parameter_logging.rb",
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/bootstrap/less/mixins/nav-vertical-align.less",
+		"/home/viphat/Dropbox/Rails/sample_app/test/integration/microposts_interface_test.rb",
+		"/home/viphat/Dropbox/Bootstrap_Angular/Markdown.Converter.js",
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/angular-touch/angular-touch.min.js",
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower.json",
 		"/home/viphat/Dropbox/Rails/yerabook/Bowerfile",
 		"/home/viphat/Downloads/bootstrap-master/src/typeahead/typeahead.js",
 		"/home/viphat/Dropbox/Rails/yerabook/app/controllers/books_controller.rb",
@@ -383,7 +382,6 @@
 		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/jquery/src/exports/amd.js",
 		"/home/viphat/Dropbox/Rails/Udemy-JumpStartAngularJS/node_modules/express/node_modules/accepts/node_modules/mime/LICENSE",
 		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/angular/books.js.coffee.erb",
-		"/home/viphat/Dropbox/Rails/yerabook/config/database.yml",
 		"/home/viphat/Dropbox/Rails/yerabook/Gemfile",
 		"/home/viphat/Dropbox/Rails/yerabook/config/secrets.yml",
 		"/home/viphat/Downloads/manual/databases/PostgreSQL-db11564.sql",
@@ -491,20 +489,11 @@
 		"/home/viphat/Dropbox/Rails/angularails/app/assets/javascripts/application.js",
 		"/home/viphat/Dropbox/Rails/angularails/app/views/layouts/application.html.erb",
 		"/home/viphat/Dropbox/Rails/angularails/app/views/books/index.html.slim",
-		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/angular/books.js.coffee",
-		"/home/viphat/Dropbox/Rails/yerabook/db/seeds.rb",
-		"/home/viphat/Dropbox/Rails/yerabook/db/migrate/20141116102453_create_books.rb",
-		"/home/viphat/Dropbox/Rails/yerabook/app/views/welcome_page/index.html.slim",
-		"/home/viphat/Dropbox/Rails/yerabook/app/controllers/welcome_page_controller.rb",
-		"/home/viphat/Dropbox/Rails/yerabook/app/controllers/welcomepage_controller.rb",
-		"/home/viphat/Dropbox/Rails/yerabook/app/controllers/index_controller.rb",
-		"/home/viphat/Dropbox/Rails/angularails/db/seeds.rb",
-		"/home/viphat/Dropbox/Rails/yerabook/app/views/books/index.html.slim",
-		"/home/viphat/Dropbox/Rails/angularails/app/models/book.rb"
+		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/angular/books.js.coffee"
 	],
 	"find":
 	{
-		"height": 31.0
+		"height": 43.0
 	},
 	"find_in_files":
 	{
@@ -588,7 +577,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -700,28 +689,29 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/assets/stylesheets/application.css",
-					"semi_transient": true,
+					"file": "Gemfile",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1497,
+						"buffer_size": 2126,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								912,
-								912
+								378,
+								378
 							]
 						],
 						"settings":
 						{
+							"auto_complete": false,
 							"codeintel": true,
 							"codeintel_database_dir": "~/.codeintel",
 							"codeintel_enabled_languages":
@@ -806,35 +796,6 @@
 							},
 							"codeintel_tooltips": "popup",
 							"codeintel_word_completions": "buffer",
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 345.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Gemfile",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2126,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								378,
-								378
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
 							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -845,7 +806,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "app/assets/javascripts/application.js",
 					"semi_transient": false,
 					"settings":
@@ -951,7 +912,7 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 483.0,
+						"translation.y": 552.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -964,7 +925,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "app/assets/javascripts/angular/books.js.coffee.erb",
 					"semi_transient": false,
 					"settings":
@@ -1072,11 +1033,11 @@
 						"translation.y": 2266.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "app/assets/javascripts/angular_application.js",
 					"semi_transient": false,
 					"settings":
@@ -1185,11 +1146,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "app/assets/javascripts/application.js",
 					"semi_transient": false,
 					"settings":
@@ -1298,7 +1259,7 @@
 						"translation.y": 345.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1366,16 +1327,16 @@
 		"selected_items":
 		[
 			[
+				"bowe",
+				"yerabook/vendor/assets/bower.json"
+			],
+			[
 				"appl",
 				"yerabook/app/assets/javascripts/application.js"
 			],
 			[
 				"gemfile",
 				"yerabook/Gemfile"
-			],
-			[
-				"bowe",
-				"yerabook/Bowerfile"
 			],
 			[
 				"configprod",
