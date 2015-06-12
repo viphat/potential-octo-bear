@@ -30,7 +30,6 @@
 //= require jquery.ae.image.resize.min
 //= require i18n
 //= require i18n/translations
-
 //= require angular_application
 //= require_tree ./templates
 //= require_tree .

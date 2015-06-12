@@ -252,26 +252,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/welcome/_search.html.slim",
+			"file": "config/environments/production.rb",
 			"settings":
 			{
-				"buffer_size": 580,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Gemfile",
-			"settings":
-			{
-				"buffer_size": 2126,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/javascripts/application.js",
-			"settings":
-			{
-				"buffer_size": 1425,
+				"buffer_size": 3499,
 				"line_ending": "Unix"
 			}
 		},
@@ -284,18 +268,23 @@
 			}
 		},
 		{
-			"file": "app/assets/javascripts/angular_application.js",
+			"file": "Gemfile",
 			"settings":
 			{
-				"buffer_size": 185,
+				"buffer_size": 2126,
 				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 268.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -342,52 +331,69 @@
 	[
 		"/home/viphat/Dropbox/Rails/yerabook",
 		"/home/viphat/Dropbox/Rails/yerabook/app",
-		"/home/viphat/Dropbox/Rails/yerabook/app/serializers",
-		"/home/viphat/Dropbox/Rails/yerabook/app/uploaders",
+		"/home/viphat/Dropbox/Rails/yerabook/app/assets",
+		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts",
+		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/angular",
+		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/templates",
 		"/home/viphat/Dropbox/Rails/yerabook/app/views",
 		"/home/viphat/Dropbox/Rails/yerabook/app/views/books",
 		"/home/viphat/Dropbox/Rails/yerabook/app/views/layouts",
-		"/home/viphat/Dropbox/Rails/yerabook/app/views/welcome",
-		"/home/viphat/Dropbox/Rails/yerabook/config",
-		"/home/viphat/Dropbox/Rails/yerabook/config/environments",
-		"/home/viphat/Dropbox/Rails/yerabook/db",
-		"/home/viphat/Dropbox/Rails/yerabook/db/migrate",
-		"/home/viphat/Dropbox/Rails/yerabook/public",
-		"/home/viphat/Dropbox/Rails/yerabook/tmp",
-		"/home/viphat/Dropbox/Rails/yerabook/vendor",
-		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets",
-		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components",
-		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/angular-touch",
-		"/home/viphat/Downloads/bootstrap-master/template"
+		"/home/viphat/Dropbox/Rails/yerabook/app/views/welcome"
 	],
 	"file_history":
 	[
+		"/home/viphat/Dropbox/Rails/yerabook/config/database.yml",
+		"/home/viphat/yera_book.dmp",
+		"/home/viphat/Dropbox/Rails/yerabook/config/initializers/assets.rb",
+		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/application.js",
+		"/home/viphat/Dropbox/Rails/tinymce/config/application.rb",
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/angular-sanitize/angular-sanitize.js",
+		"/home/viphat/Dropbox/Rails/yerabook/log/production.log",
+		"/home/viphat/Dropbox/Rails/sample_app/Procfile",
+		"/home/viphat/Dropbox/Rails/sample_app/app/controllers/password_resets_controller.rb",
+		"/home/viphat/Dropbox/Rails/yerabook/app/controllers/books_controller.rb",
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/angular-touch/angular-touch.min.js",
+		"/home/viphat/Dropbox/Rails/yerabook/app/views/welcome/_search.html.slim",
+		"/home/viphat/Dropbox/Rails/yerabook/Gemfile",
+		"/home/viphat/Dropbox/Rails/yerabook/.gitignore",
+		"/home/viphat/Dropbox/Rails/yerabook/test/controllers/books_controller_test.rb",
+		"/home/viphat/Dropbox/Rails/angularails/app/assets/javascripts/angular/book.js.coffee",
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower.json",
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/angular-touch/angular-touch.js",
+		"/home/viphat/Dropbox/Rails/Udemy-JumpStartAngularJS/scripts/angular-animate.js",
+		"/home/viphat/Dropbox/Rails/Udemy-JumpStartAngularJS/scripts/angular.js",
+		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/angular/books.js.coffee.erb",
+		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/angular_application.js",
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/bootstrap/dist/css/bootstrap.css",
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/jquery/dist/jquery.min.js",
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/angucomplete-alt/dist/angucomplete-alt.min.js",
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/bootstrap/dist/css/bootstrap.css.map",
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/angular-resource/angular-resource.min.js",
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/angular-route/angular-route.min.js",
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/angular/angular.min.js",
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/bootstrap/dist/css/bootstrap-theme.css",
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/jquery/src/sizzle/dist/sizzle.min.js",
+		"/home/viphat/Dropbox/Rails/angularails/app/controllers/git_http_controller.rb",
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/jquery/src/css/addGetHookIf.js",
 		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/jquery/src/deprecated.js",
 		"/home/viphat/Dropbox/Rails/yerabook/log/development.log",
 		"/home/viphat/Dropbox/Rails/angularails/tmp/cache/assets/development/sass/f0675edf13c0b0ef3e6f4b2f14e59d3f3642d726/_responsive-visibility.scssc",
-		"/home/viphat/Dropbox/Rails/yerabook/config/database.yml",
 		"/home/viphat/Dropbox/Rails/sample_app/config/initializers/filter_parameter_logging.rb",
 		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/bootstrap/less/mixins/nav-vertical-align.less",
 		"/home/viphat/Dropbox/Rails/sample_app/test/integration/microposts_interface_test.rb",
 		"/home/viphat/Dropbox/Bootstrap_Angular/Markdown.Converter.js",
-		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/angular-touch/angular-touch.min.js",
-		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower.json",
 		"/home/viphat/Dropbox/Rails/yerabook/Bowerfile",
 		"/home/viphat/Downloads/bootstrap-master/src/typeahead/typeahead.js",
-		"/home/viphat/Dropbox/Rails/yerabook/app/controllers/books_controller.rb",
 		"/home/viphat/Dropbox/Rails/yerabook/config/environments/production.rb",
 		"/home/viphat/Dropbox/Rails/yerabook/config/environment.rb",
 		"/home/viphat/Dropbox/Rails/Udemy-JumpStartAngularJS/node_modules/express/lib/express.js",
 		"/home/viphat/Dropbox/Rails/Udemy-JumpStartAngularJS/node_modules/express/lib/application.js",
 		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/jquery/src/exports/amd.js",
 		"/home/viphat/Dropbox/Rails/Udemy-JumpStartAngularJS/node_modules/express/node_modules/accepts/node_modules/mime/LICENSE",
-		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/angular/books.js.coffee.erb",
-		"/home/viphat/Dropbox/Rails/yerabook/Gemfile",
 		"/home/viphat/Dropbox/Rails/yerabook/config/secrets.yml",
 		"/home/viphat/Downloads/manual/databases/PostgreSQL-db11564.sql",
 		"/home/viphat/Dropbox/Rails/yerabook/config/initializers/non_digest_assets.rb",
 		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/bootstrap/grunt/configBridge.json",
-		"/home/viphat/Dropbox/Rails/yerabook/.gitignore",
 		"/home/viphat/Dropbox/Rails/angularails/app/controllers/secure_controller.rb",
 		"/home/viphat/Dropbox/Rails/sample_app/bin/setup",
 		"/home/viphat/Dropbox/Rails/Udemy-JumpStartAngularJS/server.js",
@@ -397,18 +403,12 @@
 		"/home/viphat/Dropbox/Rails/yerabook/bin/spring",
 		"/home/viphat/Dropbox/Rails/yerabook/config/routes.rb",
 		"/home/viphat/Dropbox/Rails/yerabook/app/assets/stylesheets/application.css",
-		"/home/viphat/Dropbox/Rails/yerabook/app/views/welcome/_search.html.slim",
 		"/home/viphat/Dropbox/Rails/yerabook/config/application.rb",
-		"/home/viphat/Dropbox/Rails/angularails/app/assets/javascripts/angular/book.js.coffee",
-		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/angular_application.js",
-		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/application.js",
 		"/home/viphat/Dropbox/Rails/yerabook/app/controllers/application_controller.rb",
 		"/home/viphat/Dropbox/Rails/yerabook/app/helpers/application_helper.rb",
 		"/home/viphat/Dropbox/Rails/sample_app/app/helpers/application_helper.rb",
 		"/home/viphat/Dropbox/Rails/yerabook/app/views/welcome/help.html.slim",
 		"/home/viphat/Dropbox/Rails/yerabook/config.ru",
-		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/jquery/src/css/addGetHookIf.js",
-		"/home/viphat/Dropbox/Rails/angularails/app/controllers/git_http_controller.rb",
 		"/home/viphat/Dropbox/Rails/yerabook/app/views/welcome/index.html.slim",
 		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/templates/author_books.html.slim",
 		"/home/viphat/Dropbox/Rails/yerabook/app/views/welcome/_book_form.html.slim",
@@ -421,15 +421,12 @@
 		"/home/viphat/Dropbox/Rails/yerabook/spec/rails_helper.rb",
 		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/templates/all_books.html.slim",
 		"/home/viphat/Dropbox/Rails/yerabook/config/locales/en.yml",
-		"/home/viphat/Dropbox/Rails/yerabook/log/production.log",
-		"/home/viphat/Dropbox/Rails/yerabook/config/initializers/assets.rb",
 		"/home/viphat/Dropbox/Rails/yerabook/Rakefile",
 		"/home/viphat/Dropbox/Rails/yerabook/app/serializers/book_serializer.rb",
 		"/home/viphat/Dropbox/Rails/yerabook/spec/factories/books.rb",
 		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/templates",
 		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/bootstrap/dist/css/bootstrap.min.css",
 		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/angular/angular.js",
-		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/angular/angular.min.js",
 		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/bower_components/bootstrap/dist/css/bootstrap-theme.min.css",
 		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/i18n/translations.js",
 		"/home/viphat/Dropbox/Rails/yerabook/config/i18n-js.yml",
@@ -472,28 +469,11 @@
 		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/stylesheets/jqcloud.min.css",
 		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/javascripts/angular.min.js.map",
 		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/javascripts/bootstrap.min.js",
-		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/javascripts/jqcloud.min.js",
-		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/javascripts/angular-jqcloud.js",
-		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/stylesheets/bootstrap.min.css",
-		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/javascripts/angular.min.js",
-		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/angular/tagcloud.js.coffee.erb",
-		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/angular/paging.tpl.html.slim",
-		"/home/viphat/Dropbox/Rails/yerabook/yerabook.sublime-project",
-		"/home/viphat/Dropbox/Rails/angularails/app/assets/javascripts/angular-application.js",
-		"/home/viphat/Dropbox/Rails/angularails/app/assets/javascripts/angular/books_controller.js.coffee",
-		"/home/viphat/Dropbox/Rails/yerabook/app/views/welcome/_tagcloud.html.slim",
-		"/home/viphat/Dropbox/Rails/yerabook/config/settings.yml",
-		"/home/viphat/Ubrand/app/models/onepay.rb",
-		"/home/viphat/Dropbox/Rails/angularails/app/assets/javascripts/angular/game_controller.js.coffee",
-		"/home/viphat/Dropbox/Rails/angularails/app/assets/javascripts/angular/paging.js.coffee.erb",
-		"/home/viphat/Dropbox/Rails/angularails/app/assets/javascripts/application.js",
-		"/home/viphat/Dropbox/Rails/angularails/app/views/layouts/application.html.erb",
-		"/home/viphat/Dropbox/Rails/angularails/app/views/books/index.html.slim",
-		"/home/viphat/Dropbox/Rails/yerabook/app/assets/javascripts/angular/books.js.coffee"
+		"/home/viphat/Dropbox/Rails/yerabook/vendor/assets/javascripts/jqcloud.min.js"
 	],
 	"find":
 	{
-		"height": 43.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -513,6 +493,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"nm",
+			"sourceMappingURL",
 			"TYPEAHEAD_REGEXP",
 			"$scope.book",
 			"image_url",
@@ -577,357 +559,48 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/welcome/_search.html.slim",
+					"file": "config/environments/production.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 580,
+						"buffer_size": 3499,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								530,
-								530
+								1222,
+								927
 							]
 						],
 						"settings":
 						{
-							"codeintel": true,
-							"codeintel_database_dir": "~/.codeintel",
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Node.js",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_language_settings":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_exclude_dir":
-									[
-										"/build/",
-										"/min/"
-									],
-									"codeintel_scan_extra_dir":
-									[
-									],
-									"codeintel_scan_files_in_project": false,
-									"codeintel_selected_catalogs":
-									[
-										"jQuery"
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 15,
-									"codeintel_scan_exclude_dir":
-									[
-										"/Applications/MAMP/bin/php/php5.5.3/"
-									],
-									"codeintel_scan_extra_dir":
-									[
-									],
-									"codeintel_scan_files_in_project": true,
-									"php": "/Applications/MAMP/bin/php/php5.5.3/bin/php"
-								},
-								"Python3":
-								{
-									"codeintel_scan_extra_dir":
-									[
-										"/Applications/Sublime Text.app/Contents/MacOS",
-										"~/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/arch",
-										"~/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/libs"
-									],
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-									],
-									"python3": "/usr/local/bin/python3.3"
-								}
-							},
-							"codeintel_live": true,
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							[
-							],
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-							],
-							"codeintel_snippets": false,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"codeintel_word_completions": "buffer",
-							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Gemfile",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2126,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								378,
-								378
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"codeintel": true,
-							"codeintel_database_dir": "~/.codeintel",
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Node.js",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_language_settings":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_exclude_dir":
-									[
-										"/build/",
-										"/min/"
-									],
-									"codeintel_scan_extra_dir":
-									[
-									],
-									"codeintel_scan_files_in_project": false,
-									"codeintel_selected_catalogs":
-									[
-										"jQuery"
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 15,
-									"codeintel_scan_exclude_dir":
-									[
-										"/Applications/MAMP/bin/php/php5.5.3/"
-									],
-									"codeintel_scan_extra_dir":
-									[
-									],
-									"codeintel_scan_files_in_project": true,
-									"php": "/Applications/MAMP/bin/php/php5.5.3/bin/php"
-								},
-								"Python3":
-								{
-									"codeintel_scan_extra_dir":
-									[
-										"/Applications/Sublime Text.app/Contents/MacOS",
-										"~/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/arch",
-										"~/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/libs"
-									],
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-									],
-									"python3": "/usr/local/bin/python3.3"
-								}
-							},
-							"codeintel_live": true,
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							[
-							],
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-							],
-							"codeintel_snippets": false,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"codeintel_word_completions": "buffer",
+							"bogo.enabled": false,
 							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 138.0,
+						"translation.y": 991.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/assets/javascripts/application.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1425,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								915,
-								915
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"codeintel": true,
-							"codeintel_database_dir": "~/.codeintel",
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Node.js",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_language_settings":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_exclude_dir":
-									[
-										"/build/",
-										"/min/"
-									],
-									"codeintel_scan_extra_dir":
-									[
-									],
-									"codeintel_scan_files_in_project": false,
-									"codeintel_selected_catalogs":
-									[
-										"jQuery"
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 15,
-									"codeintel_scan_exclude_dir":
-									[
-										"/Applications/MAMP/bin/php/php5.5.3/"
-									],
-									"codeintel_scan_extra_dir":
-									[
-									],
-									"codeintel_scan_files_in_project": true,
-									"php": "/Applications/MAMP/bin/php/php5.5.3/bin/php"
-								},
-								"Python3":
-								{
-									"codeintel_scan_extra_dir":
-									[
-										"/Applications/Sublime Text.app/Contents/MacOS",
-										"~/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/arch",
-										"~/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/libs"
-									],
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-									],
-									"python3": "/usr/local/bin/python3.3"
-								}
-							},
-							"codeintel_live": true,
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							[
-							],
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-							],
-							"codeintel_snippets": false,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"codeintel_word_completions": "buffer",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 552.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
-					"buffer": 3,
+					"buffer": 1,
 					"file": "app/assets/javascripts/angular/books.js.coffee.erb",
-					"semi_transient": false,
+					"semi_transient": true,
 					"settings":
 					{
 						"buffer_size": 6221,
@@ -937,225 +610,29 @@
 						"selection":
 						[
 							[
-								2883,
-								2883
+								3757,
+								3759
 							]
 						],
 						"settings":
 						{
-							"codeintel": true,
-							"codeintel_database_dir": "~/.codeintel",
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Node.js",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_language_settings":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_exclude_dir":
-									[
-										"/build/",
-										"/min/"
-									],
-									"codeintel_scan_extra_dir":
-									[
-									],
-									"codeintel_scan_files_in_project": false,
-									"codeintel_selected_catalogs":
-									[
-										"jQuery"
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 15,
-									"codeintel_scan_exclude_dir":
-									[
-										"/Applications/MAMP/bin/php/php5.5.3/"
-									],
-									"codeintel_scan_extra_dir":
-									[
-									],
-									"codeintel_scan_files_in_project": true,
-									"php": "/Applications/MAMP/bin/php/php5.5.3/bin/php"
-								},
-								"Python3":
-								{
-									"codeintel_scan_extra_dir":
-									[
-										"/Applications/Sublime Text.app/Contents/MacOS",
-										"~/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/arch",
-										"~/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/libs"
-									],
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-									],
-									"python3": "/usr/local/bin/python3.3"
-								}
-							},
-							"codeintel_live": true,
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							[
-							],
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-							],
-							"codeintel_snippets": false,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"codeintel_word_completions": "buffer",
+							"bogo.enabled": false,
 							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2266.0,
+						"translation.y": 2015.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/assets/javascripts/angular_application.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 185,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								139,
-								139
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"codeintel": true,
-							"codeintel_database_dir": "~/.codeintel",
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Node.js",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_language_settings":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_exclude_dir":
-									[
-										"/build/",
-										"/min/"
-									],
-									"codeintel_scan_extra_dir":
-									[
-									],
-									"codeintel_scan_files_in_project": false,
-									"codeintel_selected_catalogs":
-									[
-										"jQuery"
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 15,
-									"codeintel_scan_exclude_dir":
-									[
-										"/Applications/MAMP/bin/php/php5.5.3/"
-									],
-									"codeintel_scan_extra_dir":
-									[
-									],
-									"codeintel_scan_files_in_project": true,
-									"php": "/Applications/MAMP/bin/php/php5.5.3/bin/php"
-								},
-								"Python3":
-								{
-									"codeintel_scan_extra_dir":
-									[
-										"/Applications/Sublime Text.app/Contents/MacOS",
-										"~/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/arch",
-										"~/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/libs"
-									],
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-									],
-									"python3": "/usr/local/bin/python3.3"
-								}
-							},
-							"codeintel_live": true,
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							[
-							],
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-							],
-							"codeintel_snippets": false,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"codeintel_word_completions": "buffer",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "app/assets/javascripts/application.js",
+					"file": "Gemfile",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1425,
+						"buffer_size": 2126,
 						"regions":
 						{
 						},
@@ -1168,98 +645,13 @@
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"codeintel": true,
-							"codeintel_database_dir": "~/.codeintel",
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Node.js",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_language_settings":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_exclude_dir":
-									[
-										"/build/",
-										"/min/"
-									],
-									"codeintel_scan_extra_dir":
-									[
-									],
-									"codeintel_scan_files_in_project": false,
-									"codeintel_selected_catalogs":
-									[
-										"jQuery"
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 15,
-									"codeintel_scan_exclude_dir":
-									[
-										"/Applications/MAMP/bin/php/php5.5.3/"
-									],
-									"codeintel_scan_extra_dir":
-									[
-									],
-									"codeintel_scan_files_in_project": true,
-									"php": "/Applications/MAMP/bin/php/php5.5.3/bin/php"
-								},
-								"Python3":
-								{
-									"codeintel_scan_extra_dir":
-									[
-										"/Applications/Sublime Text.app/Contents/MacOS",
-										"~/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/arch",
-										"~/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/libs"
-									],
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-									],
-									"python3": "/usr/local/bin/python3.3"
-								}
-							},
-							"codeintel_live": true,
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							[
-							],
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-							],
-							"codeintel_snippets": false,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"codeintel_word_completions": "buffer",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 345.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1298,7 +690,7 @@
 		"rows":
 		[
 			0.0,
-			0.5,
+			0.349925705795,
 			1.0
 		]
 	},
@@ -1315,6 +707,7 @@
 	{
 		"height": 0.0
 	},
+	"pinned_build_system": "",
 	"project": "yerabook.sublime-project",
 	"replace":
 	{
@@ -1324,8 +717,45 @@
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"ge",
+				"yerabook/Gemfile"
+			],
+			[
+				"database",
+				"yerabook/config/database.yml"
+			],
+			[
+				"applica",
+				"yerabook/app/assets/javascripts/application.js"
+			],
+			[
+				"asset",
+				"yerabook/config/initializers/assets.rb"
+			],
+			[
+				"produ",
+				"yerabook/config/environments/production.rb"
+			],
+			[
+				"bookcntr",
+				"yerabook/app/controllers/books_controller.rb"
+			],
+			[
+				"angular-touch",
+				"yerabook/vendor/assets/bower_components/angular-touch/angular-touch.min.js"
+			],
+			[
+				"datab",
+				"yerabook/config/database.yml"
+			],
+			[
+				"giti",
+				"yerabook/.gitignore"
+			],
 			[
 				"bowe",
 				"yerabook/vendor/assets/bower.json"
@@ -1353,14 +783,6 @@
 			[
 				"secre",
 				"yerabook/config/secrets.yml"
-			],
-			[
-				"ge",
-				"yerabook/Gemfile"
-			],
-			[
-				"database",
-				"yerabook/config/database.yml"
 			],
 			[
 				"routes",
@@ -1432,11 +854,12 @@
 	"select_project":
 	{
 		"height": 500.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
 				"",
-				"~/Ubrand.sublime-project"
+				"~/data-tools.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -1444,6 +867,7 @@
 	"select_symbol":
 	{
 		"height": 56.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -1457,7 +881,7 @@
 		],
 		"width": 660.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
