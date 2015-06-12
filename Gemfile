@@ -48,7 +48,7 @@ gem 'slim-rails'
 gem 'kaminari'
 gem 'quiet_assets', group: :development
 gem 'rails_config'
-gem 'did_you_mean', group: [:development, :test]
+# gem 'did_you_mean', group: [:development, :test]
 gem 'bower-rails', '~> 0.9.1'
 gem 'redcarpet'
 gem 'carrierwave'
