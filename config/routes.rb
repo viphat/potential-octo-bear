@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get 'books/type/:book_type' => 'books#filter_book_type'
   get 'books/search/:title' => 'books#search_by_title', as: 'search_books_by_title'
   get 'books/authors' => 'books#authors_tag'
-
+  get 'books/get_books_json' => 'books#get_books_json'
   get 'books/title/:title' => 'books#load_book_details'
   get 'books/random' => 'books#get_random_book'
 

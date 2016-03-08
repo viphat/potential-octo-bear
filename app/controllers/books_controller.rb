@@ -4,6 +4,11 @@ class BooksController < ApplicationController
 
   before_action :set_book, only: [:show, :edit, :update, :destroy]
 
+  def get_books_json
+    books = Book.export_to_json()
+    render json: { books: books }
+  end
+
   def search_by_title
     if (params[:title].present?)
       @books = Book.where('title ILIKE ?', "%#{params[:title]}%").order(:created_at)

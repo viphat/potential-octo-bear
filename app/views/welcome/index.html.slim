@@ -15,6 +15,9 @@ div ng-app='myBookshelf' data-no-turbolink='' ng-controller='BooksController' ng
               .panel-body
                 = render 'book_details'
     .col-md-4
+      .row.text-center
+        a.btn.btn-primary(href='#' ng-click='exportBooks($event)')
+          | Export Data to Firebase
       = render 'welcome/search'
       = render 'welcome/book_form'
       = render 'welcome/tagcloud'

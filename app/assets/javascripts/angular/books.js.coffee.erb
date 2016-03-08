@@ -97,6 +97,16 @@ app.directive "jqueryFile", [ ->
 
 bookCtrl = app.controller "BooksController", [ '$scope','$routeParams', 'Book', '$http', '$resource',  ($scope, $routeParams, Book, $http, $resource) ->
 
+  $scope.exportBooks = ($event) ->
+    $event.preventDefault()
+    ref = new Firebase("https://flickering-inferno-2708.firebaseio.com")
+    booksRef = ref.child("books")
+    $http.get('/books/get_books_json').then (res) ->
+      $.each(res.data.books, (index, book)->
+        console.log book
+        booksRef.push(book)
+      )
+
   $scope.searchBooks = (val) ->
     url = "/books/search/" + val
     $http.get(url).then (response) ->
