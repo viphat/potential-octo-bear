@@ -103,7 +103,7 @@ bookCtrl = app.controller "BooksController", [ '$scope','$routeParams', 'Book', 
     booksRef = ref.child("books")
     $http.get('/books/get_books_json').then (res) ->
       $.each(res.data.books, (index, book)->
-        console.log book
+        $.extend(book, { ".priority": index+1 })
         booksRef.push(book)
       )
 
